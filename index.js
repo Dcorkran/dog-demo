@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 
 const knex = require('./db/knex');
 
-const port = process.env.DATABASE_URL || 'postgres://localhost/dog-demo';
+const port = process.env.PORT || 3000;
 app.listen(port, () =>{
   console.log(`Listening on ${port}`);
 });
